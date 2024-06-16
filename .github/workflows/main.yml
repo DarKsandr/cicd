@@ -7,4 +7,5 @@ jobs:
     deploy:
       runs-on: [self-hosted]
       steps:
-         - run: cd /var/www/html && git fetch && git reset --hard origin/main
+        - name: deploy 
+          run: cd /var/www/html && git fetch && git reset --hard origin/main

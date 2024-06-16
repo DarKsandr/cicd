@@ -7,6 +7,7 @@ jobs:
     deploy:
       runs-on: [self-hosted]
       steps:
+       - uses: actions/checkout@v4
+         with:
+            path: /var/www/html
 #         - run: cd /var/www/html && git fetch --all && git reset --hard origin/main
-        - run: cd /var/www/html
-        - run: pwd
